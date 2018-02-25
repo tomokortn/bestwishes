@@ -12,7 +12,11 @@ def facebook
       name: auth.info.name
     )
 
-    remember_me(user)
+    p "user"
+    p user
+    p "end user"
+
+    # remember_me(user)
 
     sign_in_and_redirect user, event: :authentication
   end

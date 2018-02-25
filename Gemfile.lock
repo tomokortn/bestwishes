@@ -67,6 +67,9 @@ GEM
       responders
       warden (~> 1.2.3)
     dotenv (2.2.1)
+    dotenv-rails (2.2.1)
+      dotenv (= 2.2.1)
+      railties (>= 3.2, < 5.2)
     erubis (2.7.0)
     execjs (2.7.0)
     faraday (0.12.2)
@@ -201,6 +204,7 @@ DEPENDENCIES
   compass-rails (~> 2.0)
   devise
   dotenv
+  dotenv-rails
   jbuilder (~> 2.0)
   jquery-rails
   mysql2 (= 0.3.18)
