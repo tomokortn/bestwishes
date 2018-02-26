@@ -1,3 +1,22 @@
-// Place all the styles related to the Posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+header {
+	height: 34px;
+	width: 1024px;
+	background-color: #98D5E6;
+	padding-top: 14px;
+}
+
+header > span {
+	margin-left: 16px;
+	font-family: 'Abril Fatface', cursive;
+	font-size: 20px;
+}
+
+.icon {
+	display: inline;
+	margin-left: 810px;
+}
+
+.icon > a {
+	margin-left: 16px;
+}
+
