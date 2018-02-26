@@ -1,22 +1,39 @@
+// header
+
 header {
-	height: 34px;
-	width: 1024px;
+	height: 40px;
+	width: 100%;
 	background-color: #98D5E6;
-	padding-top: 14px;
+	padding-top: 16px;
 }
 
 header > span {
 	margin-left: 16px;
 	font-family: 'Abril Fatface', cursive;
-	font-size: 20px;
+	font-size: 24px;
 }
 
-.icon {
+.nav-icon {
+	float: right;
 	display: inline;
-	margin-left: 810px;
+	margin-right: 18px;
 }
 
-.icon > a {
-	margin-left: 16px;
+.nav-icon > a {
+	font-size: 24px;
+	margin-left: 32px;
+}
+
+// new
+content {
+	width: 100%;
+	text-align: center;
+}
+
+.title-icon > i {
+	font-size: 64px;
+	color: #98D5E6;
+	margin-top: 24px;
+	margin-bottom: 16px;
 }
 
