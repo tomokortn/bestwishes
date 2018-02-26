@@ -86,3 +86,7 @@ padding:0;
 input, select {
 vertical-align:middle;
 }
+
+a {
+text-decoration: none;
+}
