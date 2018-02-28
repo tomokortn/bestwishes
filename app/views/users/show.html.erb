@@ -1,14 +1,20 @@
+<% unless user_signed_in? %>
+	redirect_to "login"
+<% else %>
+
+<%= render 'shared/header' %>
 <p id="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+	<div class="userinfo">
+		<img src="https://graph.facebook.com/<%= current_user.uid %>/picture?type=large" width=56px>
+		<p>
+		<%= current_user.name %>
+		<%= link_to destroy_user_session_path, :method => :delete do %>
+  			<i class="fas fa-sign-out-alt"></i>
+		<% end %>
+		</p>
+	</div>
+	<div class="kiritori"></div>
+<%= render 'shared/list' %>
 
-<p>
-  <strong>Icon:</strong>
-  <%= @user.icon %>
-</p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<% end %>

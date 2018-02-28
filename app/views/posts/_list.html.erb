@@ -7,12 +7,12 @@
         <tr>
           <th>
             <%= link_to edit_post_path(post) do %>
-            <i class="fas fa-pencil-alt"></i>
+            <i class="fas fa-edit"></i>
             <% end %>
           </th>
           <th>
             <%= link_to post, method: :delete, data: { confirm: 'Are you sure?' } do %>
-            <i class="fas fa-trash-alt"></i>
+            <i class="fas fa-trash"></i>
             <% end %>
           </th>
           <th colspan="2"></th>
@@ -21,7 +21,9 @@
     </div>
 
     <div class="wish">
-      <img src="<%= post.image %>" width=100%>
+    <% if post.image.present? %>
+    <img src="<%= post.image %>" width=100%>
+    <% end %>
       <p><%= post.text %></p>
     </div>
 

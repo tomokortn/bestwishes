@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   #   delete :sign_out, to: 'devise/sessions#destroy', as: :destroy_user_session
   # end
   resources :posts
-  resources :users, only: [ :edit, :update, :destroy ]
+  resources :users, only: [ :show, :edit, :update, :destroy ]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -14,6 +14,7 @@ Rails.application.routes.draw do
 
   get "login" => "login#index"
   get "projectors" => "projector#index"
+  get "users/:id"   =>  'users#show'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

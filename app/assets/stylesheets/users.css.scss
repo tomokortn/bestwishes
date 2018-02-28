@@ -1,3 +1,27 @@
+.userinfo {
+	text-align: center;
+}
+
+.userinfo img {
+	border-radius: 50%;
+	margin-top: 24px;
+	margin-bottom: 8px;
+}
+
+.userinfo p {
+	font-weight: 600;
+	font-size: 16px;
+	margin-bottom: 24px;
+	color: #333435;
+	letter-spacing: 0.02em;
+}
+
+.userinfo a {
+	font-size: 16px;
+	color: #999999;
+	margin-left: 8px;
+}
+
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
