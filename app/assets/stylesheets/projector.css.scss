@@ -1,28 +1,26 @@
 .projector {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 1;
-	width: 100%;
-	height: 100%;
-
-	background: linear-gradient(to bottom, #a6d900 0%, #ff4454 100%);
-	opacity: 0.5;
-	animation: huerotator 10s infinite alternate;
+  background-color: #e74c3c;
+  animation: bg-color 10s infinite;
+  -webkit-animation: bg-color 10s infinite;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
 }
-
-@keyframes huerotator {
-  0% {
-    -webkit-filter: hue-rotate(0deg);
-    filter: hue-rotate(0deg);
-  }
-
-  100% {
-    -webkit-filter: hue-rotate(360deg);
-    filter: hue-rotate(360deg);
-  }
+@-webkit-keyframes bg-color {
+  0% { background-color: #e74c3c; }
+  20% { background-color: #f1c40f; }
+  40% { background-color: #1abc9c; }
+  60% { background-color: #3498db; }
+  80% { background-color: #9b59b6; }
+  100% { background-color: #e74c3c; }
+}
+@keyframes bg-color {
+  0% { background-color: #e74c3c; }
+  20% { background-color: #f1c40f; }
+  40% { background-color: #1abc9c; }
+  60% { background-color: #3498db; }
+  80% { background-color: #9b59b6; }
+  100% { background-color: #e74c3c; }
 }
 
 // Place all the styles related to the Projector controller here.

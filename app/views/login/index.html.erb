@@ -1,1 +1,12 @@
-<%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path %>
+<div class="login-body">
+<div class="ad">
+	<div class="logotype2">BestWishes</div>
+	<div class="ad-text"><p>人生の門出を迎える友だちに<br>お祝いメッセージを送ろう</p></div>
+
+	<div class="fb-btn">
+	<%= link_to user_facebook_omniauth_authorize_path do %>
+		  <i class="fab fa-facebook"></i> Sign in with Facebook
+	<% end %>
+	</div>
+</div>
+</div>

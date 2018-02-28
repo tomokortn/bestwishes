@@ -6,7 +6,11 @@ header {
 	padding-top: 16px;
 }
 
-header > a > span {
+.posts {
+	overflow: hidden;
+}
+
+.logotype {
 	margin-left: 16px;
 	font-family: 'Abril Fatface', cursive;
 	font-size: 24px;
