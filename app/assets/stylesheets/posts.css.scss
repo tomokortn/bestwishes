@@ -1,5 +1,4 @@
 // header
-
 header {
 	height: 40px;
 	width: 100%;
@@ -18,13 +17,65 @@ header > a > span {
 	float: right;
 	display: inline;
 	margin-right: 16px;
-	margin-top: 6px;
+	margin-top: 3px;
 }
 
 .nav-icon > a {
-	font-size: 16px;
-	margin-left: 30px;
+	font-size: 20px;
+	margin-left: 32px;
 	color: #FFFFFF;
+}
+
+// index
+.userdata {
+	padding: 8px;
+	height: 44px;
+	width: 100%;
+}
+
+.userdata > img {
+	border-radius: 50%;
+	margin-left: 8px;
+	vertical-align: middle;
+}
+
+.userdata > span {
+	font-size: 14px;
+	font-weight: 600;
+	vertical-align: middle;
+	margin-left: 8px;
+	color: #333435; /* black */
+	letter-spacing: 0.02em;
+ }
+
+.edit {
+	float: right;
+	font-size: 20px;
+	margin-top: 12px;
+	margin-bottom: 8px;
+	margin-right: 24px;
+}
+
+.edit > a {
+	margin-left: 32px;
+	color: #999999; /* gray */
+}
+
+.wish img {
+	margin-bottom: 8px;
+}
+
+.wish p {
+	margin: 0px 16px 8px 16px;
+	letter-spacing: 0.03em;
+	line-height: 18px;
+	font-size: 14px;
+}
+
+.kiritori {
+	width: 100%;
+	height: 8px;
+	background-color: #ffdde1;
 }
 
 // new
