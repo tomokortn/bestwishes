@@ -1,7 +1,15 @@
 <%= render 'shared/header' %>
 
-<content>
-<table>
+<div class="posts">
+<% @posts.each do |post| %>
+  <img src="<%= post.image %>" width=40px>
+  <span><%= post.user.name %></span>
+  <img src="<%= post.image %>" width=100%>
+  <p><%= post.text %></p>
+<% end %>
+</div>
+
+<!-- <table>
   <thead>
     <tr>
       <th>Text</th>
@@ -22,7 +30,5 @@
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
-  </tbody>
+  </tbody> -->
 </table>
-
-</content>

@@ -1,0 +1,2 @@
+class ProjectorController < ApplicationController
+end
