@@ -1,5 +1,8 @@
 .userinfo {
 	text-align: center;
+	background-color: #FAFAFA;
+	padding-bottom: 24px;
+	box-shadow: 0px 1px 2px rgba(102, 68, 0, 0.1) inset;
 }
 
 .userinfo img {
@@ -11,7 +14,6 @@
 .userinfo p {
 	font-weight: 600;
 	font-size: 16px;
-	margin-bottom: 24px;
 	color: #333435;
 	letter-spacing: 0.02em;
 }
