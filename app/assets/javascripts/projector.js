@@ -61,8 +61,11 @@ $.fn.autoChange = function(config) {
    });
 };
 
+// $(function() {
+//    $('#wishes').css({"display": "flex"});
+// });
 
 // 自動切り替えする要素の設定
 $(function() {
-   $('#sample2').autoChange({effect : 'fade', type : 'repeat', timeout: 3000, speed : 1000});
+   $('#wishes').autoChange({effect : 'fade', type : 'repeat', timeout: 3000, speed : 1000});
 });

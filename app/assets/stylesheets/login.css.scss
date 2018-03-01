@@ -10,15 +10,11 @@
 	text-align: center;
 }
 
-
-.ad {
-	padding-top: calc(50vh - 90px);
-}
-
 .logotype2 {
-	font-size: 40px;
+	font-size: 60px;
 	color: #FFFFFF;
-	font-family: 'Abril Fatface', cursive;
+	font-family: 'Amatic SC', cursive;
+  letter-spacing: 0.06em;
 }
 
 .ad-text {
@@ -30,6 +26,7 @@
 	margin-bottom: 32px;
 	line-height: 22px;
 }
+
 // Place all the styles related to the login controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/

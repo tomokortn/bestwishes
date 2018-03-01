@@ -4,8 +4,8 @@
   -webkit-animation: bg-color 40s infinite;
   width: 100%;
   height: 100vh;
-  text-align: center;
 }
+
 @-webkit-keyframes bg-color {
   0% { background-color: #e74c3c; }
   20% { background-color: #f1c40f; }
@@ -14,6 +14,7 @@
   80% { background-color: #9b59b6; }
   100% { background-color: #e74c3c; }
 }
+
 @keyframes bg-color {
   0% { background-color: #e74c3c; }
   20% { background-color: #f1c40f; }
@@ -23,17 +24,28 @@
   100% { background-color: #e74c3c; }
 }
 
-#sample2 {
-  width:400px;
-  height:300px;
-  overflow:hidden;
-  position:relative;
-  list-style:none;
+.mannaka {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  flex-direction: column;
+
+  & li {
+    display: block;
+    position: absolute;
+    width: 400px;
+    text-align: center;
+    font-weight: 800px;
+    font-size: 32px;
+    color: #FFFFFF;
+    letter-spacing: 0.02em;
+    line-height: 44px;
+  }
 }
 
-#sample2 li {
-   position:absolute;
-}
 
 // Place all the styles related to the Projector controller here.
 // They will automatically be included in application.css.
