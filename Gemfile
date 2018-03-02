@@ -55,5 +55,6 @@ gem 'sprockets', '2.11.0'
 gem 'devise'
 gem 'omniauth-facebook'
 
-gem 'sqlite3', group: [:development, :test]
-gem 'pg', group: :production
+group :production do
+  gem 'rails_12factor'
+end
