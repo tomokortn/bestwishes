@@ -1,7 +1,7 @@
 <div class="projector">
 <ul id="wishes" class="mannaka" >
 <% @posts.each do |post| %>
-   <li><%= post.text %></li>
+   <li><%= post.text %> by <%= post.user.name %></li>
 <% end %>
 </ul>
 </div>
