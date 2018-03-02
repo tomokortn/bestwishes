@@ -1,7 +1,7 @@
 <div class="posts">
   <% @posts.each do |post| %>
     <div class="userdata">
-      <img src="https://graph.facebook.com/<%= current_user.uid %>/picture?type=large" width=44px>
+      <img src="https://graph.facebook.com/<%= post.user.uid %>/picture?type=large" width=44px>
       <span><%= post.user.name %></span>
         <div class="edit">
         <tr>
