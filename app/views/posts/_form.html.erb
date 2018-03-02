@@ -24,7 +24,7 @@
   <%= f.hidden_field :user_id, value: current_user.id %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= submit_tag "Send", "data-disable-with" => "Sending..."%>
   </div>
 </div>
 <% end %>
