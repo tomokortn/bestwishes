@@ -3,10 +3,6 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   has_many :posts
 
-  def email_required?
-    false
-  end
-
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable
   devise :rememberable, :trackable, :omniauthable, omniauth_providers: [:facebook]
