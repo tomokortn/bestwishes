@@ -6,4 +6,8 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 	devise :rememberable, :trackable, :omniauthable, omniauth_providers: [:facebook]
 
+  def email_required?
+    false
+  end
+
 end
