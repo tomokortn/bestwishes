@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
 	devise :rememberable, :trackable, :omniauthable, omniauth_providers: [:facebook]
 
   def email_required?
-    (authentications.empty? || !email.blank?) && super
+    false
   end
 
 end
