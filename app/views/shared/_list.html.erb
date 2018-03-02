@@ -3,6 +3,7 @@
     <div class="userdata">
       <img src="https://graph.facebook.com/<%= post.user.uid %>/picture?type=large" width=44px>
       <span><%= post.user.name %></span>
+      <% if user_signed_in? && current_user.id == post.user_id %>
         <div class="edit">
         <tr>
           <th>
@@ -18,6 +19,7 @@
           <th colspan="2"></th>
         </tr>
       </div>
+      <% end %>
     </div>
 
     <div class="wish">
