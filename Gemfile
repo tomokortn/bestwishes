@@ -45,7 +45,6 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'dotenv'
-  gem 'dotenv-rails', require: 'dotenv/rails-now'
 end
 
 gem 'pry-rails'
@@ -57,4 +56,5 @@ gem 'omniauth-facebook'
 
 group :production do
   gem 'rails_12factor'
+  gem 'dotenv-rails', require: 'dotenv/rails-now'
 end
