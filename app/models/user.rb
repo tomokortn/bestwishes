@@ -8,8 +8,7 @@ class User < ActiveRecord::Base
   end
 
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable
-	devise :rememberable, :trackable, :omniauthable, omniauth_providers: [:facebook]
-
+         :recoverable, :rememberable, :trackable
+  devise :rememberable, :trackable, :omniauthable, omniauth_providers: [:facebook]
 
 end

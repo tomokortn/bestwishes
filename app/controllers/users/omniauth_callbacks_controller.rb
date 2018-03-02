@@ -21,7 +21,4 @@ def facebook
     sign_in_and_redirect user, event: :authentication
   end
 
-  def failure
-    redirect_to root_path
-  end
 end
