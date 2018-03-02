@@ -222,6 +222,7 @@ DEPENDENCIES
   jquery-rails
   jquery-turbolinks
   mysql2 (= 0.3.18)
+  omniauth
   omniauth-facebook
   pry-rails
   rails (= 4.2.6)
